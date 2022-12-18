@@ -29,7 +29,7 @@ public class Application {
     System.out.println("+++ Starte Anwendung +++\n");
 
     if (args.length != 3) {
-      System.out.println("Usage: java -jar test.jar IN_FILE OUT_FILE OU");
+      System.out.println("Usage: java -jar firstAuthor.jar IN_FILE OUT_FILE OU");
       return;
     }
 
