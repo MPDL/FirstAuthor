@@ -16,7 +16,7 @@ import org.json.JSONObject;
  * 
  * Für eine schöne Darstellung der Eingabedatei verwende: http://json.parser.online.fr
  */
-public class Application {
+public class AppFirstAuthor {
   public static String readFile(String fileName) throws IOException {
     return Files.readString(Paths.get(fileName));
   }
@@ -45,7 +45,7 @@ public class Application {
 
     String content = null;
     try {
-      content = Application.readFile(inFile);
+      content = AppFirstAuthor.readFile(inFile);
       sb.append("ID\tTitel\tName\tOrganisation\n");
     } catch (IOException e) {
       System.out.println("\n##### ERROR #####:\n");
@@ -107,7 +107,7 @@ public class Application {
     }
 
     try {
-      Application.writeFile(outFile, sb.toString());
+      AppFirstAuthor.writeFile(outFile, sb.toString());
       System.out.println("\n+++ Beende Anwendung +++");
     } catch (IOException e) {
       System.out.println("\n##### ERROR #####:\n");
